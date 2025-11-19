@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenedor{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 180px;
+    width: 180px;
+    background-color: rgb(23, 180, 146);
+    transition: 1s ease-out 1s
+    
+}
+
+.contenedor:hover{
+    background-color: rgb(167, 199, 240);
+    font-size: 2em;
+    color: blue;
+    line-height: 1em;
+    border-radius: 30px;
+    box-shadow:6px 6px 6px 1px rgba(0, 0, 0, 0.2);
+    opacity: 20%;
+    padding: 1em;
+    width: 280px;
+    height: 280px;
+}
