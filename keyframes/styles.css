@@ -8,43 +8,35 @@ body{
     width: 300px;
     height: 300px;
     margin-top: 8em;
-    background-color: red;
+    background: radial-gradient(rgb(255, 126, 126), rgb(255, 0, 0), rgba(209, 0, 0, 0.979));
     border-radius: 50%;
     animation: latir 2s linear infinite ;
     position: absolute;
+    
 }
 
-.esfera2{
-    width: 300px;
-    height: 300px;
-    margin-top: 8em;
-    background-color: rgba(255, 0, 0, 0.596);
-    border-radius: 50%;
-    animation: latir2 2s linear infinite ;
-    position: absolute;
-}
 
 @keyframes latir{
     0%{
         transform: scale(1);
-    }
-
-        100%{
-        transform: scale(1.2);
         opacity: 0;
+        box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.87);
     }
-}
 
-@keyframes latir2{
-    0%{
-        transform: scale(1);
+    10%{
+        opacity: 1;
     }
 
     100%{
-        transform: scale(1.5);
+        transform: scale(1.2);
         opacity: 0;
+        box-shadow: 0px 0px 20px 40px rgba(255, 0, 0, 0);
     }
 }
+
+
+/*--------------------------------------------------------------------------*/
+
 
 .contenedor{
     width: 50vh;
@@ -75,7 +67,6 @@ body{
 
     100%{
         width: 100%;
-        
         background-color: rgb(157, 174, 250);
     }
 }
