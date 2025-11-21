@@ -1,38 +1,84 @@
 body{
-    background:linear-gradient(45deg, rgb(10, 10, 10), rgb(19, 18, 18));
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(rgb(17, 17, 17), rgb(10, 10, 10));
 }
 
 
 h3{
 color: rgb(255, 132, 87);
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 2em;
 }
 
 p{
     color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contenedor{
-     grid-template-columns: auto, auto, auto;
     display: flex;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 1em; 
+    width: 100vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 .tarjeta{
-    margin: 2em;
     display: flex;
+    margin: 1.5em;
     flex-direction: column;
+    padding: 1.5em;
+    padding-bottom: 0;
     align-items: center;
     justify-content: center;
-    justify-content: center;
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(39, 39, 39);
     border-radius: 30px;
 }
 
 img{
-    width: 500px;
+    width: 20vw;
     height: auto;
+    border-radius: 20px;
+
+}
+
+.escalagrises{
+    filter: grayscale();
+}
+
+.blur{
+    filter: blur(5px);
+}
+.sepia{
+    filter:sepia();
+}
+
+.saturate{
+    filter:saturate(5)
+}
+
+.invert{
+    filter: invert();
+}
+
+.darkcontrast{
+    filter: contrast(4);
+}
+
+.huerotate{
+    filter: hue-rotate(45deg);
+}
+
+.dropshadow{
+    filter:drop-shadow(2px 2px 15px red);
+}
+
+img:hover{
+    filter: none;
+    transition: 0.5s;
+    transform: scale(1.05);
 }
